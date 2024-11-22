@@ -1,0 +1,701 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#composedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#composedOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Result"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#involves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#ranks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#ranks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Standings_Table"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <rdfs:comment>Table position</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#updates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#updates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Result"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Standings_Table"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#draw -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#draw">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Result"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indicates whether a match ended in a draw or not</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#draws -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#draws">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Standings_Table"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#endDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#InterFaculty_Competition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#goalDifference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#goalDifference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Standings_Table"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#goalsAgainst -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#goalsAgainst">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Result"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Goals being  scored against a team</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#goalsFor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#goalsFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Result"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>goals scored by a team</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasFixture -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasFixture">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#InterFaculty_Competition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasPlayers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasPlayers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasScored -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#hasScored">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#InterFaculty_Competition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#losses -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#losses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Standings_Table"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#matchesPlayed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#matchesPlayed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Standings_Table"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#matchesPlayedbyTeam -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#matchesPlayedbyTeam">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#InterFaculty_Competition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#points -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#points">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Standings_Table"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#rankPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#rankPosition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Standings_Table"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#startDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#InterFaculty_Competition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#teamName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#teamName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#wins -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#wins">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Standings_Table"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#InterFaculty_Competition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#InterFaculty_Competition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Result -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Result"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Standings_Table -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Standings_Table"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Inter-Faculty_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Inter-Faculty_2024">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#InterFaculty_Competition"/>
+        <untitled-ontology-5:endDate>29th August 2024</untitled-ontology-5:endDate>
+        <untitled-ontology-5:hasName>Mbarara University Inter-Faculty Competitions</untitled-ontology-5:hasName>
+        <untitled-ontology-5:location>Mbarara University of Science and Technology</untitled-ontology-5:location>
+        <untitled-ontology-5:startDate>1st August 2024</untitled-ontology-5:startDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FCI vs FAST</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>2:1</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>MUST Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FIS vs FCI</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>3:1</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>Kihumuro Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FIS vs FAST</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>1:0</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>MUST Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FIS vs FBMS</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>1:3</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>Kihumuro Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FIS vs FOS</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>2:0</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>MUST Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FIS vs FOM</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>1:0</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>Kihumuro Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FOM vs FBMS</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>1:0</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>Kihumuro Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FCI vs FBMS</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>4:0</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>MUST Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FAST vs FOM</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>4:0</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>MUST Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FOM Vs FCI</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>3:0</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>Kihumuro Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FBMS vs FOS</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>3:0</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>MUST Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FAST vs FOS</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>3:1</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>Kihumuro Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FOM vs FOS</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>3:2</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>MUST Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FCI vs FOS</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>5:0</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>MUST Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match"/>
+        <untitled-ontology-5:hasFixture>FAST vs FBMS</untitled-ontology-5:hasFixture>
+        <untitled-ontology-5:hasScore>2:0</untitled-ontology-5:hasScore>
+        <untitled-ontology-5:location>Kihumuro Pitch</untitled-ontology-5:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:belongsTo rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team1"/>
+        <untitled-ontology-5:hasName>Simplious</untitled-ontology-5:hasName>
+        <untitled-ontology-5:hasScored rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-5:hasScored>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:hasName>Amos</untitled-ontology-5:hasName>
+        <untitled-ontology-5:hasScored rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-5:hasScored>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:hasName>Kevin</untitled-ontology-5:hasName>
+        <untitled-ontology-5:hasScored rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-5:hasScored>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Player"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round2"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round2"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round3"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round3"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round4"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round4"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Round"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match1_Round5"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match2_Round5"/>
+        <untitled-ontology-5:involves rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Match3_Round5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <untitled-ontology-5:matchesPlayedbyTeam rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-5:matchesPlayedbyTeam>
+        <untitled-ontology-5:teamName>Faculty of Computing and Informatics(FCI)</untitled-ontology-5:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <untitled-ontology-5:matchesPlayedbyTeam rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-5:matchesPlayedbyTeam>
+        <untitled-ontology-5:teamName>Faculty of InterDisciplinary Studies(FIS)</untitled-ontology-5:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <untitled-ontology-5:matchesPlayedbyTeam rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-5:matchesPlayedbyTeam>
+        <untitled-ontology-5:teamName>Faculty of Business and Management Studies(FBMS)</untitled-ontology-5:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <untitled-ontology-5:matchesPlayedbyTeam rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-5:matchesPlayedbyTeam>
+        <untitled-ontology-5:teamName>Faculty of Medicine(FOM)</untitled-ontology-5:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <untitled-ontology-5:matchesPlayedbyTeam rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-5:matchesPlayedbyTeam>
+        <untitled-ontology-5:teamName>Faculty of Science(FOS)</untitled-ontology-5:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <untitled-ontology-5:matchesPlayedbyTeam rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-5:matchesPlayedbyTeam>
+        <untitled-ontology-5:teamName>Faculty of Applied Sciences and Technology</untitled-ontology-5:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dsn/ontologies/2024/9/untitled-ontology-5#Team"/>
+        <untitled-ontology-5:matchesPlayedbyTeam rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-5:matchesPlayedbyTeam>
+        <untitled-ontology-5:teamName>Liverpool</untitled-ontology-5:teamName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
